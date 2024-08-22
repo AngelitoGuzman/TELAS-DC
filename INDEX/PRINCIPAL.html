@@ -1,17 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<title>TELAS Y BOTONES D.C</title>
-	<link rel="shortcut icon" href="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\INDEX\LOGOTITLE.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELAS Y BOTONES D.C</title>
+    <link rel="shortcut icon" href="INDEX/LOGOTITLE.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            flex: 0 0 15%;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+        }
+        .content iframe {
+            flex: 1;
+            border: none;
+        }
+    </style>
 </head>
-<frameset rows="15%,85%">
-	<frame src="file:///C:/Users/USUARIO/OneDrive/Escritorio/TELAS%20Y%20BOTONES%20WEB/MENUDENAVEGACION.html" frameborder="0" scrolling="no" noresize>
-		<frame src="file:///C:/Users/USUARIO/OneDrive/Escritorio/TELAS%20Y%20BOTONES%20WEB/PANTALLAINICIO/PANTALLAINICIO.html" frameborder="0" name="1" noresize>
-	<frame src="file:///C:/Users/USUARIO/OneDrive/Escritorio/TELAS%20Y%20BOTONES%20WEB/SELECLANAS/SELECLANASPAGE.html" frameborder="0" name="1" noresize>
-		<frame src="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\WAWITA\DESCRIPWAWITA.html" frameborder="0" name="1" noresize>
-			<frame src="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\POLAR\DESCRIPTIVAPOLAR.html" frameborder="0" name="1" noresize>
-</frameset>
-<noframes>
-<p>NO SOPORTA FRAMES</p>
-</noframes>
-</frameset>
+<body>
+    <div class="container">
+        <div class="header">
+            <iframe src="MENUDENAVEGACION.html" style="width: 100%; height: 100%;" scrolling="no"></iframe>
+        </div>
+        <div class="content">
+            <iframe src="PANTALLAINICIO/PANTALLAINICIO.html" name="1"></iframe>
+            <iframe src="SELECLANAS/SELECLANASPAGE.html" name="1"></iframe>
+            <iframe src="WAWITA/DESCRIPWAWITA.html" name="1"></iframe>
+            <iframe src="POLAR/DESCRIPTIVAPOLAR.html" name="1"></iframe>
+        </div>
+    </div>
+</body>
 </html>
