@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<title>MENÚ</title>
-	<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENÚ</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .whatsapp-icon, .fc {
+            position: fixed;
+            opacity: 0.5;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transform-origin: right center;
+        }
         .whatsapp-icon {
-            position: fixed; /* Fijo en la pantalla */
-            bottom: 10px; /* Distancia desde la parte inferior */
-            right: 10px; /* Distancia desde la parte derecha */
-            opacity: 0.5;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            transform-origin: right center;
+            bottom: 10px;
+            right: 10px;
         }
-
-        .whatsapp-icon img {
-            display: inline-block;
-            vertical-align: middle;
-            width: 100px; /* Ajusta el ancho del ícono */
-            height: 100px; /* Ajusta la altura del ícono */
+        .fc {
+            bottom: 84px;
+            right: 10px;
         }
-
-        .whatsapp-icon:hover {
-            transform: scale(1.2);
-            opacity: 1;
+        .whatsapp-icon img, .fc img {
+            width: 100px;
+            height: 100px;
         }
-		.fc {
-            position: fixed; /* Fijo en la pantalla */
-            bottom: 84px; /* Distancia desde la parte inferior */
-            right: 10px; /* Distancia desde la parte derecha */
-            opacity: 0.5;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            transform-origin: right center;
-        }
-
         .fc img {
-            display: inline-block;
-            vertical-align: middle;
-            width: 97px; /* Ajusta el ancho del ícono */
-            height: 97px; /* Ajusta la altura del ícono */
+            width: 97px;
+            height: 97px;
         }
-
-        .fc:hover {
+        .whatsapp-icon:hover, .fc:hover {
             transform: scale(1.2);
             opacity: 1;
+        }
+        h1 {
+            color: #2e2d29;
+            margin: 20px 0;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            display: block;
         }
     </style>
-	<a class="whatsapp-icon" href="https://wa.me/50231006409/?text=Buenos%20días%20estoy%20interesado/a%20en" target="_blank">
-		<img src="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\PANTALLAINICIO\whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.webp" alt="WhatsApp Icon">
-	</a>
-	<a class="fc" href="https://www.facebook.com/telascelia/?locale=es_LA" target="_blank">
-		<img src="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\PANTALLAINICIO\Facebook-Logosu.png" 
-		alt="fc">
-	</a>
 </head>
-
-
-
-
-<body bgcolor="white">
-	<center>
-	<a href="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\WAWITA\DESCRIPWAWITA.html" target="1" style="text-decoration: none;">
-			<h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><font color="#2e2d29"><h1>CLÁSICA</h1></font></h1></a>
-
-			<a href="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\POLAR\DESCRIPTIVAPOLAR.html" target="1" style="text-decoration: none;">
-				<h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><font color="#2e2d29"><h1>POLAR</h1></font></h1></a>
-
-				<a href="C:\Users\USUARIO\OneDrive\Escritorio\TELAS Y BOTONES WEB\WAWITA\DESCRIPWAWITA.html" target="1" style="text-decoration: none;">
-					<h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><font color="#2e2d29"><h1>WAWITA</h1></font></h1></a>
-
-					<a href="file:///C:/Users/USUARIO/OneDrive/Escritorio/TELAS%20Y%20BOTONES%20WEB/DESCRIPTIVAPOLAR.html" target="1" style="text-decoration: none;">
-					<h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><font color="#2e2d29"><h1>JUNIOR</h1></font></h1></a>
-   
+<body>
+    <a class="whatsapp-icon" href="https://wa.me/50231006409/?text=Buenos%20días%20estoy%20interesado/a%20en" target="_blank">
+        <img src="images/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.webp" alt="WhatsApp Icon">
+    </a>
+    <a class="fc" href="https://www.facebook.com/telascelia/?locale=es_LA" target="_blank">
+        <img src="images/Facebook-Logosu.png" alt="Facebook Icon">
+    </a>
+    <center>
+        <a href="wawita/descripwawita.html" target="_blank">
+            <h1>CLÁSICA</h1>
+        </a>
+        <a href="polar/descriptivapolar.html" target="_blank">
+            <h1>POLAR</h1>
+        </a>
+        <a href="wawita/descripwawita.html" target="_blank">
+            <h1>WAWITA</h1>
+        </a>
+        <a href="junior/descriptivapolar.html" target="_blank">
+            <h1>JUNIOR</h1>
+        </a>
     </center>
 </body>
 </html>
